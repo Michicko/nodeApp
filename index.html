@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="big-nav">
+            <div class="container">
+                <h1>Notes App</h1>
+                <h5>Keep note of things...</h5>
+            </div>
+        </div>
+        <div class="mini-nav">
+            <div class="container">
+                <input type="search" id="filter-notes" placeholder="search notes..." />
+                <select id="sort">
+                    <option value="Sort by last edited" class="modified">Sort by last edited</option>
+                    <option value="Sort alphabetically" class="alphabetical">Sort alphabetically</option>
+                    <option value="Sort by date created" class="created-at">Sort by date created</option>
+                </select>
+                <button id="create-note" class="btn">Create Note</button>
+                <button id="cancel-note" class="btn">Cancel</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Add Notes -->
+    <div class="add-note-container">
+        <div class="container">
+            <div class="form-group">
+                <input type="text" id="title-input" class="title-input" placeholder="Title...">
+                <textarea id="body-input" cols="30" rows="10" placeholder="Text..."></textarea>
+            </div>
+            <div class="btn-container">
+                <input type="submit" value="Add note" class="btn" id="create">
+
+            </div>
+        </div>
+    </div>
+    <!-- Notes -->
+    <div class="notes-container">
+        <div class="container">
+            <ul class="notes-collections">
+                <!-- note-item -->
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <footer>copyrights | &copy; michicko 2020.</footer>
+    <script src="js/ui.js"></script>
+    <script src="js/objectId.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
